@@ -1,4 +1,5 @@
 #include <iostream>
+#include <Windows.h>
 
 void one()
 {
@@ -82,6 +83,8 @@ void three()
 
 int main()
 {
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
     one();
     two(); // тут гугл в помощь
     three();
